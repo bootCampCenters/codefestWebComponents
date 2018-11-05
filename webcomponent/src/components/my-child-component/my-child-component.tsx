@@ -44,9 +44,11 @@ export class MyChildComponent {
             this.color = 'green';
             this.enableBlockButton = true;
         } else if (conditions === 0) {
-            this.color = 'black';  
+            this.color = 'black'; 
+            this.enableBlockButton = false; 
         } else {
-            this.color = 'orange';   
+            this.color = 'orange'; 
+            this.enableBlockButton = false;  
         }
     }
 
@@ -55,7 +57,7 @@ export class MyChildComponent {
         event.stopPropagation();
         this.calculateColor();
     }
-
+    
     blockInput() {
         this.enableInput = true;
         this.onClickEmitter.emit({ data: 'Se ha clickeado en el botón bloquear' });

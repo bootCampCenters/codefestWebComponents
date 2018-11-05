@@ -25,13 +25,13 @@ div.my-child-component>input:focus {
 }
 div.password {
     height: 10px;
-    width: 183px;
+    width: 170px;
     border: 1px solid black;
     display: inline-block;
 }
 
 button.block-button {
-    background: #4B99AD;
+    background: darkgreen;
 	padding: 8px 15px 8px 15px;
 	border: none;
 	color: #fff;
