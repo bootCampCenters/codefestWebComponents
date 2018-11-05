@@ -1,0 +1,20 @@
+# Stencil project
+webcomponent/dist
+webcomponent/node_modules
+webcomponent/.stencil
+webcomponent/package-lock.json
+
+# Vue project
+vue-version/package-lock.json
+vue-version/node_modules
+vue-version/dist
+
+# ReactJS project
+react-version/package-lock.json
+react-version/node_modules
+react-version/build
+
+# Angular project
+angular-version/package-lock.json
+angular-version/node_modules
+angular-version/dist

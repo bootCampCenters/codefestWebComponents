@@ -1,0 +1,38 @@
+div.my-child-component {
+    border: 1px solid gray;
+    padding: 5px;
+}
+div.my-child-component>input {
+    margin-right: 3px;
+    border: 1px solid black;
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+
+div.my-child-component>input:focus {
+    -moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+div.password {
+    height: 10px;
+    width: 183px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+button.block-button {
+    background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
