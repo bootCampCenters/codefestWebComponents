@@ -1,9 +1,13 @@
 div.my-child-component {
     border: 1px solid gray;
-    padding: 5px;
+	padding: 5px;
+	background-position: right top;
+    background-image: url('../../assets/everiscodefestlogo.jpg');
+    background-repeat: no-repeat;
+    background-size: 120px;
 }
 div.my-child-component>input {
-    margin-right: 3px;
+    margin-right: 10px;
     border: 1px solid black;
     box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -14,7 +18,8 @@ div.my-child-component>input {
 	-moz-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
 	-o-transition: all 0.30s ease-in-out;
-    outline: none;
+	outline: none;
+	border-radius: 6px;
 }
 
 div.my-child-component>input:focus {
@@ -25,14 +30,33 @@ div.my-child-component>input:focus {
 }
 div.password {
     height: 10px;
-    width: 170px;
-    border: 1px solid black;
+    width: 181px;
+	border: 1px solid black;
+	border-radius: 6px;
     display: inline-block;
 }
 
 button.block-button {
     background: darkgreen;
-	padding: 8px 15px 8px 15px;
+	padding: 10px 15px 8px 15px;
 	border: none;
 	color: #fff;
+	border-radius: 7px;
+	box-shadow: 0 3px 0 rgb(85, 170, 126);
+	top: 0px;
+	transition: all ease 0.3s;
+	position: relative;
+}
+
+button.block-button:hover {
+	cursor: pointer;
+}
+
+button.block-button:active {
+	box-shadow: 0 3px 0 rgb(85, 170, 126);
+  	top: 3px;
+}
+
+button.block-button:focus {
+	outline: none;
 }

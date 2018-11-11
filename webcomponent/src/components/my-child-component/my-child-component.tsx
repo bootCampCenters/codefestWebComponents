@@ -15,8 +15,9 @@ export class MyChildComponent {
     render() {
         return (
             <div class="my-child-component">
-                <p>Hello from {this.titlePasswordComponent} component!</p>
-                <label id="password">Password: </label><br/>
+                <p>Hello, I'm the {this.titlePasswordComponent} component in Stencil</p>
+                <label id="password">Password: </label>
+                <br/><br/>
                 <input disabled={this.enableInput} 
                     name="password"
                     id="password"

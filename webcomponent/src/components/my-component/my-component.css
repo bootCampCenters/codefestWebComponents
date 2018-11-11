@@ -1,4 +1,8 @@
 div.webcomponent {
     border: 2px solid darkgray;
     padding: 5px;
+    background-position: right top;
+    background-image: url('../../assets/everiscodefestlogo.jpg');
+    background-repeat: no-repeat;
+    background-size: 120px;
 }

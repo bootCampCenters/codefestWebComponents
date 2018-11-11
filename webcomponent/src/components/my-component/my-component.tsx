@@ -22,7 +22,7 @@ export class MyComponent {
 
   render() {
     return <div class="webcomponent"> 
-      <p>Hello, World! I'm {this.format()}</p>
+      <p>Hello, I'm {this.format()}</p>
       <p style={{ display: this.bloqueadoDesdeElHijo ? 'inline' : 'none' }}>Input password has been blocked!</p>
       <br/>
       <my-child-component title-password-component="Password"></my-child-component>
