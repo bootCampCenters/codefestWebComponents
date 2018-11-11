@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      messageFromWebComponent: 'Inicial',
+      messageFromWebComponent: '',
       first: 'the Parent component',
       last: 'in Stencil'
     };
