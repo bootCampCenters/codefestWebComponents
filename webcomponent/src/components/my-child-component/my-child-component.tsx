@@ -16,22 +16,23 @@ export class MyChildComponent {
         return (
             <div class="my-child-component">
                 <p>Hello, I'm the {this.titlePasswordComponent} component in Stencil</p>
-                <label id="password">Password: </label>
-                <br/><br/>
-                <input disabled={this.enableInput} 
-                    name="password"
-                    id="password"
-                    type="text" 
-                    value={this.password} 
-                    onInput={(event) => this.onPasswordChanged(event)}>
-                </input>
-                <button style={{ display: this.enableBlockButton ? 'inline' : 'none' }}
-                        onClick={() => this.blockInput()}
-                        class="block-button">
-                        Block password
-                </button>
-                <br/>
-                <div class="password" style={{ "background-color": this.color }}></div>
+                <div class="password-container">
+                    <input disabled={this.enableInput} 
+                        placeholder="Enter your password..."
+                        name="password"
+                        id="password"
+                        type="text" 
+                        value={this.password} 
+                        onInput={(event) => this.onPasswordChanged(event)}>
+                    </input>
+                    <button style={{ display: this.enableBlockButton ? 'inline' : 'none' }}
+                            onClick={() => this.blockInput()}
+                            class="block-button">
+                            Block password
+                    </button>
+                    <br/>
+                    <div class="password" style={{ "background-color": this.color }}></div>
+                </div>
             </div>
         )
     }

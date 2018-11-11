@@ -6,7 +6,7 @@ div.my-child-component {
     background-repeat: no-repeat;
     background-size: 120px;
 }
-div.my-child-component>input {
+div.password-container>input {
     margin-right: 10px;
     border: 1px solid black;
     box-sizing: border-box;
@@ -20,6 +20,11 @@ div.my-child-component>input {
 	-o-transition: all 0.30s ease-in-out;
 	outline: none;
 	border-radius: 6px;
+}
+
+div.password-container {
+	width: 30%;
+  	margin: 0 auto;
 }
 
 div.my-child-component>input:focus {
