@@ -6,9 +6,9 @@
     </div>
     <div style="width: 100%; height: 20rem; text-align: left;">
       <my-component 
-        first="Stencil"
-        last="'Don't call me a framework' JS"
-        v-on:onEvent="eventInVue"></my-component>
+        first="Stencil" last="'Don't call me a framework' JS"
+        v-on:onEvent="eventInVue">
+      </my-component>
     </div>
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
   </div>

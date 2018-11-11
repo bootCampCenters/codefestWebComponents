@@ -17,12 +17,12 @@ export class MyChildComponent {
             <div class="my-child-component">
                 <p>Hello, I'm the {this.titlePasswordComponent} component in Stencil</p>
                 <div class="password-container">
-                    <input disabled={this.enableInput} 
+                    <input value={this.password}
+                        disabled={this.enableInput} 
                         placeholder="Enter your password..."
                         name="password"
                         id="password"
                         type="text" 
-                        value={this.password} 
                         onInput={(event) => this.onPasswordChanged(event)}>
                     </input>
                     <button style={{ display: this.enableBlockButton ? 'inline' : 'none' }}
@@ -37,6 +37,11 @@ export class MyChildComponent {
         )
     }
 
+    blockInput() {
+        this.enableInput = true;
+        this.onClickEmitter.emit({ data: 'Se ha clickeado en el botón bloquear' });
+    }
+    
     calculateColor() {
         var lowerCase = /[a-z]/.test(this.password);
         var upperCase = /[A-Z]/.test(this.password);
@@ -58,10 +63,5 @@ export class MyChildComponent {
         this.password = event.target.value;
         event.stopPropagation();
         this.calculateColor();
-    }
-    
-    blockInput() {
-        this.enableInput = true;
-        this.onClickEmitter.emit({ data: 'Se ha clickeado en el botón bloquear' });
     }
 }

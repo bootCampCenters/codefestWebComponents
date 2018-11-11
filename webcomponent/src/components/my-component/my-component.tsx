@@ -1,5 +1,4 @@
 import { Component, Prop, Listen, State, Event, EventEmitter } from '@stencil/core';
-
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
@@ -23,7 +22,9 @@ export class MyComponent {
   render() {
     return <div class="webcomponent"> 
       <p>Hello, I'm {this.format()}</p>
-      <p style={{ display: this.bloqueadoDesdeElHijo ? 'inline' : 'none' }}>Input password has been blocked!</p>
+      <p style={{ display: this.bloqueadoDesdeElHijo ? 'inline' : 'none' }}>
+        Input password has been blocked!
+      </p>
       <br/>
       <my-child-component title-password-component="Password"></my-child-component>
     </div>;

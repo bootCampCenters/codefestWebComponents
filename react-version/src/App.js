@@ -25,11 +25,8 @@ class App extends Component {
         </div>
         <div style={{width: "100%", height: "20rem", "textAlign": "left", padding: "10px"}}>
           <my-component 
-            first={this.state.first}
-            last={this.state.last}
-            ref={wc({
-              onEvent: (e) => this.eventInReact(e)
-            })}>
+            first={this.state.first} last={this.state.last}
+            ref={wc({ onEvent: (e) => this.eventInReact(e) })}>
           </my-component>
         </div>
       </div>
