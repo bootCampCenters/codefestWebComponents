@@ -26,7 +26,11 @@ export function wc(customEvents = {}, props = {}) {
         let value = customEvents[name] ;
         // If we have an element then add event listeners
         // otherwise remove the event listener
+        // <marcos.ginel@gmail.com>: When ReactJS reloads the main component, it removes all the children, therefore, there's no webcomponent loaded
+        // and we're unable to remove the listener, which means, that we don't need to remove it
         const action = (el) ? el.addEventListener : (storedEl && storedEl.removeEventListener ? storedEl.removeEventListener : null);
+        // <marcos.ginel@gmail.com>: When ReactJS reloads the main component, it removes all the children, therefore, there's no webcomponent loaded
+        // and we're unable to execute the action (because action can be null as set above)
         if (typeof value === 'function' && action) {
           action(name, value);
           return;
