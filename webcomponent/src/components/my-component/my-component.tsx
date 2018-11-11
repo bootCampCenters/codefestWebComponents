@@ -1,4 +1,4 @@
-import { Component, Prop, Listen, State } from '@stencil/core';
+import { Component, Prop, Listen, State, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'my-component',
@@ -10,6 +10,7 @@ export class MyComponent {
   @Prop() middle: string;
   @Prop() last: string;
   @State() bloqueadoDesdeElHijo: boolean = false;
+  @Event() onEvent: EventEmitter;
 
   format(): string {
     return (
@@ -32,5 +33,6 @@ export class MyComponent {
   showMessage(event) {
     console.log(event.detail);
     this.bloqueadoDesdeElHijo = true;
+    this.onEvent.emit({ data: event.detail });
   }  
 }

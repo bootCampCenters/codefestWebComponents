@@ -29,6 +29,7 @@ export namespace Components {
     'first'?: string;
     'last'?: string;
     'middle'?: string;
+    'onOnEvent'?: (event: CustomEvent) => void;
   }
 }
 
