@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "vue": "^2.5.16",
-    "@marcosginel/my-component": "0.0.6"
+    "@marcosginel/my-component": "0.0.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",

@@ -26,8 +26,8 @@ export function wc(customEvents = {}, props = {}) {
         let value = customEvents[name] ;
         // If we have an element then add event listeners
         // otherwise remove the event listener
-        const action = (el) ? el.addEventListener : storedEl.removeEventListener;
-        if (typeof value === 'function') {
+        const action = (el) ? el.addEventListener : (storedEl && storedEl.removeEventListener ? storedEl.removeEventListener : null);
+        if (typeof value === 'function' && action) {
           action(name, value);
           return;
         }

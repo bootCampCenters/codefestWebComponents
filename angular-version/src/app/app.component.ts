@@ -7,8 +7,10 @@ import { Component, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  messageFromWebComponent = '';
 
-  eventInAngular($event: Event) {
+  eventInAngular($event) {
     console.log($event);
+    this.messageFromWebComponent = $event.detail.data.data;
   }
 }

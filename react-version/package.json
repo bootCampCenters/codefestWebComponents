@@ -2,7 +2,7 @@
   "name": "react-version",
   "version": "1.0.0",
   "dependencies": {
-    "@marcosginel/my-component": "0.0.6",
+    "@marcosginel/my-component": "0.0.11",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.4"
