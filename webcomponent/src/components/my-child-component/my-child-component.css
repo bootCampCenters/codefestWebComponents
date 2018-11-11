@@ -23,7 +23,7 @@ div.password-container>input {
 }
 
 div.password-container {
-	width: 30%;
+	width: 350px;
   	margin: 0 auto;
 }
 
@@ -35,7 +35,7 @@ div.my-child-component>input:focus {
 }
 div.password {
     height: 10px;
-    width: 181px;
+    width: 50px;
 	border: 1px solid black;
 	border-radius: 6px;
     display: inline-block;
