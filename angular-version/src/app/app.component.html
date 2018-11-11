@@ -4,7 +4,11 @@
 </div>
 
 <div style="width: 100%; height: 20rem; text-align: left;">
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <my-component 
+    first="Stencil" 
+    last="'Don't call me a framework' JS"
+    (onEvent)="eventInAngular($event)">
+  </my-component>
 </div>
 
 <h1>

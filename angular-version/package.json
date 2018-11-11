@@ -22,7 +22,7 @@
     "core-js": "^2.5.4",
     "zone.js": "^0.8.26",
     "rxjs": "^6.0.0",
-    "@marcosginel/my-component": "0.0.4"
+    "@marcosginel/my-component": "0.0.6"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.3",

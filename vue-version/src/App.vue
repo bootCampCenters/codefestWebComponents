@@ -2,7 +2,10 @@
   <div id="app">
     <img src="./assets/logo.png">
     <div style="width: 100%; height: 20rem; text-align: left;">
-      <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+      <my-component 
+        first="Stencil"
+        last="'Don't call me a framework' JS"
+        v-on:onEvent="eventInVue"></my-component>
     </div>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -15,6 +18,12 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  methods: {
+    eventInVue(e) {
+      // eslint-disable-next-line
+      console.log(e);
+    }
   }
 }
 </script>
