@@ -55,7 +55,7 @@ export class MyChildComponent {
             this.enableBlockButton = false; 
         } else {
             this.color = 'orange'; 
-            this.enableBlockButton = false;  
+            //this.enableBlockButton = false;  
         }
     }
 

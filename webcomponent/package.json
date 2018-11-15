@@ -1,6 +1,6 @@
 {
   "name": "@marcosginel/my-component",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Stencil Component Starter",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
